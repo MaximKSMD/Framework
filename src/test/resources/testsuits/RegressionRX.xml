@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Ad Spots Suite" parallel="false">
+<!-- &lt;!&ndash;   <test name="Media">-->
+<!--        <classes>-->
+<!--            <class name="rx.inventory.media.MediaCheckFieldsTests"/>-->
+<!--            <class name="rx.inventory.media.MediaCreateTests"/>-->
+<!--            <class name="rx.inventory.media.MediaEditTests"/>-->
+<!--            <class name="rx.inventory.media.MediaActivateDeactivateTableTests"/>-->
+<!--            <class name="rx.inventory.media.MediaSearchTableTests"/>-->
+<!--            <class name="rx.inventory.media.MediaSortingTableTests"/>-->
+<!--            <class name="rx.inventory.media.MediaCheckColumnsTests"/>-->
+<!--            <class name="rx.inventory.media.MediaCheckPaginationTests"/>-->
+<!--            <class name="rx.inventory.media.MediaCheckTooltipsTests"/>-->
+<!--        </classes>-->
+<!--    </test>&ndash;&gt;-->
+<!-- &lt;!&ndash;   <test name="Protections Feature">-->
+<!--        <classes>-->
+<!--            <class name="rx.protections.ProtectionsCheckPaginationTests"/>-->
+<!--        </classes>-->
+<!--    </test>&ndash;&gt;-->
+    <test name="Ad Spot">
+        <classes>
+            <class name="rx.inventory.adspot.AdSpotEditTests"/>
+            <class name="rx.inventory.adspot.AdSpotSearchTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckFieldsTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckColumnsTests"/>
+            <class name="rx.inventory.adspot.AdSpotSortingTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckTooltipsTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckTooltipsTests"/>
+            <class name="rx.inventory.adspot.AdSpotVideoCardCreateTests"/>
+            <class name="rx.inventory.adspot.AdSpotAllFieldsCreateTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckPaginationTests"/>
+            <class name="rx.inventory.adspot.AdSpotBannerCardCreateTests"/>
+            <class name="rx.inventory.adspot.AdSpotNativeCardCreateTests"/>
+            <class name="rx.inventory.adspot.ChangingPublisherInSidebarTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckRelatedMediaListTests"/>
+            <class name="rx.inventory.adspot.AdSpotActivateDeactivateTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotRequiredFieldsOnlyCreateTests"/>
+        </classes>
+    </test>
+<!--    <test name="Publishers Column Filter">-->
+<!--        <classes>-->
+<!--            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterCreatedDateWidgetTests"/>-->
+<!--            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterTableTests"/>-->
+<!--            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterUpdatedDateWidgetTests"/>-->
+<!--            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterWidgetTests"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

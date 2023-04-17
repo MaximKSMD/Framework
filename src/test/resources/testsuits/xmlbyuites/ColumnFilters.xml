@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="false">
+
+    <test name="Precondition. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+    <test name="Protection Columns Filter Tests">
+        <classes>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterWidgetTests"/>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterTableTests"/>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterCreatedDateWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Publishers Column Filter">
+        <classes>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterTableTests"/>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Open Pricing Columns Filter">
+        <classes>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterTableTests"/>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Deals Columns Filter">
+        <classes>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterStartDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterEndDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterTableTests"/>
+        </classes>
+    </test>
+
+    <test name="Users Columns Filter">
+        <classes>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterTableTests"/>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Media Column Filter tests">
+        <classes>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterTableTests"/>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Adspot Column Filter tests">
+        <classes>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterTableTests"/>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="PrivateAuctions Column Filter">
+        <classes>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterTableTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterStartDateWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterEndDateWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Demand Source Column Filter tests">
+        <classes>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterTableTests"/>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="XPost-conditions. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="false">
+
+    <test name="Precondition. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+
+    <test name="Media">
+        <classes>
+            <class name="rx.inventory.media.MediaEditTests"/>
+            <class name="rx.inventory.media.MediaCreateTests"/>
+            <class name="rx.inventory.media.MediaCheckFieldsTests"/>
+            <class name="rx.inventory.media.MediaSearchTableTests"/>
+            <class name="rx.inventory.media.MediaCheckColumnsTests"/>
+            <class name="rx.inventory.media.MediaSortingTableTests"/>
+            <class name="rx.inventory.media.MediaCheckTooltipsTests"/>
+            <class name="rx.inventory.media.MediaCheckPaginationTests"/>
+            <class name="rx.inventory.media.MediaActivateDeactivateTableTests"/>
+        </classes>
+    </test>
+
+    <test name="Ad Spot">
+        <classes>
+            <class name="rx.inventory.adspot.AdSpotEditTests"/>
+            <class name="rx.inventory.adspot.AdSpotSearchTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckFieldsTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckColumnsTests"/>
+            <class name="rx.inventory.adspot.AdSpotSortingTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckTooltipsTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckTooltipsTests"/>
+            <class name="rx.inventory.adspot.AdSpotVideoCardCreateTests"/>
+            <class name="rx.inventory.adspot.AdSpotAllFieldsCreateTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckPaginationTests"/>
+            <class name="rx.inventory.adspot.AdSpotBannerCardCreateTests"/>
+            <class name="rx.inventory.adspot.AdSpotNativeCardCreateTests"/>
+            <class name="rx.inventory.adspot.ChangingPublisherInSidebarTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckRelatedMediaListTests"/>
+            <class name="rx.inventory.adspot.AdSpotActivateDeactivateTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotRequiredFieldsOnlyCreateTests"/>
+        </classes>
+    </test>
+
+    <test name="Open Pricing">
+        <classes>
+            <class name="rx.yield.openpricing.CreateOpenPricingTest"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadTests"/>
+            <class name="rx.yield.openpricing.OpenPricingSortingTableTests"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadNegativeTests"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadSidebarTests"/>
+            <class name="rx.yield.openpricing.OpenPricingChangePublisherTests"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadNegtiveWrongDataTests"/>
+            <class name="rx.yield.openpricing.OpenPricingOsMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingAdSizeMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingSingleAdminUploadSidebarTests"/>
+            <class name="rx.yield.openpricing.OpenPricingDeviceMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingGeoMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingDspMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingAdFormatMultipaneTests"/>
+        </classes>
+    </test>
+
+    <test name="Protections Feature">
+        <classes>
+            <class name="rx.protections.ProtectionsTest"/>
+            <class name="rx.protections.ProtectionsSortingTableTests"/>
+            <class name="rx.protections.ProtectionsCheckPaginationTests"/>
+            <class name="rx.protections.ProtectionsDeviceMultipaneTests"/>
+            <class name="rx.protections.ProtectionsInventoryMultipaneTests"/>
+            <class name="rx.protections.ProtectionsGeoMultipaneTests"/>
+            <class name="rx.protections.ProtectionAdFormatMultipaneTests"/>
+            <class name="rx.protections.ProtectionsDspMultipaneTests"/>
+            <class name="rx.protections.ProtectionsAdSizeMultipaneTests"/>
+            <class name="rx.protections.ProtectionsGeoMultipaneTests"/>
+        </classes>
+    </test>
+
+    <test name="Deals Feature">
+        <classes>
+            <class name="rx.sales.deals.DealsTest"/>
+            <class name="rx.sales.deals.DealsCreateEditTests"/>
+            <class name="rx.sales.deals.DealsCheckFieldsTests"/>
+        </classes>
+    </test>
+
+    <test name="Login Feature">
+        <classes>
+            <class name="rx.login.LoginPageTests"/>
+            <class name="rx.login.LoginPositiveTest"/>
+            <class name="rx.login.EnvironmentVersionTest"/>
+        </classes>
+    </test>
+
+    <test name="Components Tests">
+        <classes>
+            <class name="rx.component.table.TableDataTests"/>
+            <class name="rx.component.multipane.MultipaneTest"/>
+            <class name="rx.component.multipane.InventoryMultipaneTest"/>
+            <class name="rx.component.categories.CategoriesSelectionTests"/>
+            <class name="rx.component.singlepanefilter.SinglePaneFilterProtectionTest"/>
+            <class name="rx.component.table.FilterChipTests"/>
+        </classes>
+    </test>
+
+    <test name="Publisher Feature">
+        <classes>
+            <class name="rx.admin.publishers.PublisherTest"/>
+            <class name="rx.admin.publishers.PublisherCheckFieldsTests"/>
+            <class name="rx.admin.publishers.PublisherCheckColumnsTests"/>
+            <class name="rx.admin.publishers.PublisherSortingTableTests"/>
+            <class name="rx.admin.publishers.PublisherCheckPaginationTests"/>
+        </classes>
+    </test>
+
+    <test name="Users">
+        <classes>
+            <class name="rx.admin.users.UsersSortingTableTests"/>
+            <class name="rx.admin.users.UsersCheckPaginationTests"/>
+            <class name="rx.admin.users.UsersCreationTests"/>
+            <class name="rx.admin.users.UsersEditTests"/>
+        </classes>
+    </test>
+
+    <test name="Demand Source Feature">
+        <classes>
+            <class name="rx.admin.demand.EditDemandSourceTest"/>
+        </classes>
+    </test>
+
+    <test name="Profile Feature">
+        <classes>
+            <class name="rx.profile.UserProfileSettingsTest"/>
+        </classes>
+    </test>
+
+        <test name="Private Auction Feature">
+            <classes>
+                <class name="rx.sales.privateauctions.PrivateAuctionCreateEditTests"/>
+                <class name="rx.sales.privateauctions.PrivateAuctionCheckFields"/>
+                <class name="rx.sales.privateauctions.PrivateAuctionAdFormatMultipaneTests"/>
+                <class name="rx.sales.privateauctions.PrivateAuctionAdSizeMultipaneTests"/>
+                <class name="rx.sales.privateauctions.PrivateAuctionGeoMultipaneTests"/>
+                <class name="rx.sales.privateauctions.PrivateAuctionOsMultipaneTests"/>
+            </classes>
+        </test>
+
+    <test name="Protection Columns Filter Tests">
+        <classes>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterWidgetTests"/>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterTableTests"/>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.protections.columnsfilter.ProtectionsColumnsFilterCreatedDateWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Publishers Column Filter">
+        <classes>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterTableTests"/>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.admin.publishers.columnsfilter.PublishersColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Open Pricing Columns Filter">
+        <classes>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterTableTests"/>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.yield.openpricing.columnsfilter.OpenPricingColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Deals Columns Filter">
+        <classes>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterStartDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterEndDateWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterWidgetTests"/>
+            <class name="rx.sales.deals.columnsfilter.DealsColumnsFilterTableTests"/>
+        </classes>
+    </test>
+
+    <test name="Users Columns Filter">
+        <classes>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterTableTests"/>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.admin.users.columnsfilter.UsersColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Media Column Filter tests">
+        <classes>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterTableTests"/>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.inventory.media.columnsfilter.MediaColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Adspot Column Filter tests">
+        <classes>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterTableTests"/>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.inventory.adspot.columnsfilter.AdspotColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="PrivateAuctions Column Filter">
+        <classes>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterTableTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterStartDateWidgetTests"/>
+            <class name="rx.sales.privateauctions.columnsfilter.PrivateAuctionsColumnsFilterEndDateWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="Demand Source Column Filter tests">
+        <classes>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterCreatedDateWidgetTests"/>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterTableTests"/>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterUpdatedDateWidgetTests"/>
+            <class name="rx.admin.demand.columnsfilter.DemandSourceColumnsFilterWidgetTests"/>
+        </classes>
+    </test>
+
+    <test name="XPost-conditions. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+
+</suite>

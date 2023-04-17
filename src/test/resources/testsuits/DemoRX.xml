@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Demo Suite" parallel="false">
+    <test name="Media">
+        <classes>
+            <class name="rx.inventory.media.MediaCheckFieldsTests"/>
+            <class name="rx.inventory.media.MediaEditTests"/>
+            <class name="rx.inventory.media.MediaCheckTooltipsTests"/>
+        </classes>
+    </test>
+   <!-- <test name="Publishers Feature">
+        <classes>
+            <class name="rx.admin.publishers.PublisherTest"/>
+        </classes>
+    </test>
+    <test name="Ad Spots Feature">
+        <classes>
+            <class name="rx.protections.ProtectionsInventoryMultipaneTests"/>
+           <class name="rx.inventory.adspot.AdSpotSortingTableTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckPaginationTests"/>
+            <class name="rx.inventory.adspot.AdSpotCheckTooltipsTests"/>
+        </classes>
+    </test>-->
+</suite>

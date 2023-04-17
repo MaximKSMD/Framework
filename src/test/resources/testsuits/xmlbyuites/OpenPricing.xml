@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="false">
+
+    <test name="Precondition. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+    <test name="Open Pricing">
+        <classes>
+            <class name="rx.yield.openpricing.CreateOpenPricingTest"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadTests"/>
+            <class name="rx.yield.openpricing.OpenPricingSortingTableTests"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadNegativeTests"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadSidebarTests"/>
+            <class name="rx.yield.openpricing.OpenPricingChangePublisherTests"/>
+            <class name="rx.yield.openpricing.OpenPricingUploadNegtiveWrongDataTests"/>
+            <class name="rx.yield.openpricing.OpenPricingOsMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingAdSizeMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingSingleAdminUploadSidebarTests"/>
+            <class name="rx.yield.openpricing.OpenPricingDeviceMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingGeoMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingDspMultipaneTests"/>
+            <class name="rx.yield.openpricing.OpenPricingAdFormatMultipaneTests"/>
+        </classes>
+    </test>
+    <test name="XPost-conditions. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+</suite>

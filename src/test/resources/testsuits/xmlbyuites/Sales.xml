@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="false">
+
+    <test name="Precondition. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+
+    <test name="Deals Feature">
+        <classes>
+            <class name="rx.sales.deals.DealsTest"/>
+            <class name="rx.sales.deals.DealsCreateEditTests"/>
+            <class name="rx.sales.deals.DealsCheckFieldsTests"/>
+        </classes>
+    </test>
+
+
+    <test name="Private Auction Feature">
+        <classes>
+            <class name="rx.sales.privateauctions.PrivateAuctionCreateEditTests"/>
+            <class name="rx.sales.privateauctions.PrivateAuctionCheckFields"/>
+            <class name="rx.sales.privateauctions.PrivateAuctionAdFormatMultipaneTests"/>
+            <class name="rx.sales.privateauctions.PrivateAuctionAdSizeMultipaneTests"/>
+            <class name="rx.sales.privateauctions.PrivateAuctionGeoMultipaneTests"/>
+            <class name="rx.sales.privateauctions.PrivateAuctionOsMultipaneTests"/>
+        </classes>
+    </test>
+
+    <test name="XPost-conditions. Delete records with 'auto' substring">
+        <classes>
+            <class name="rx.pipelines.DeleteGeneratedDataTest"/>
+        </classes>
+    </test>
+
+</suite>

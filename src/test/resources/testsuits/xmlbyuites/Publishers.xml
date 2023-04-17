@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="false">
+
+<!--    <test name="Precondition. Delete records with 'auto' substring">-->
+<!--        <classes>-->
+<!--            <class name="rx.pipelines.DeleteGeneratedDataTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+      <test name="Publisher Feature">
+        <classes>
+            <class name="rx.admin.publishers.PublisherTest"/>
+            <class name="rx.admin.publishers.PublisherCheckFieldsTests"/>
+            <class name="rx.admin.publishers.PublisherCheckColumnsTests"/>
+            <class name="rx.admin.publishers.PublisherSortingTableTests"/>
+            <class name="rx.admin.publishers.PublisherCheckPaginationTests"/>
+        </classes>
+    </test>
+
+<!--    <test name="XPost-conditions. Delete records with 'auto' substring">-->
+<!--        <classes>-->
+<!--            <class name="rx.pipelines.DeleteGeneratedDataTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
